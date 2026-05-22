@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Premium | Estilo & Experiência</title>
+    <!-- Tailwind CSS CDN para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-900 text-stone-100 font-sans antialiased">
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <header class="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-black tracking-wider uppercase text-amber-500">BARBER<span class="text-white">SHOP</span></a>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-amber-500 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-amber-500 transition-colors">Sobre</a>
+                <a href="#servicos" class="hover:text-amber-500 transition-colors">Serviços</a>
+                <a href="#galeria" class="hover:text-amber-500 transition-colors">Galeria</a>
+                <a href="#contato" class="hover:text-amber-500 transition-colors">Contato</a>
+            </nav>
+            <a href="https://wa.me/5500999999999" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-4 py-2 rounded transition-all text-sm uppercase tracking-wider">Agendar</a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 1: HOME (BANNER GRANDE) -->
+    <section id="home" class="relative h-[90vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1920');">
+        <div class="text-center px-4 max-w-3xl">
+            <span class="text-amber-500 tracking-widest uppercase font-bold text-sm block mb-3">Estilo, Cultura & Tradição</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight uppercase">Mais que um corte, uma <span class="text-amber-500">experiência</span>.</h1>
+            <p class="text-stone-300 text-lg md:text-xl mb-8 max-w-xl mx-auto font-light">Cuide do seu visual com profissionais especialistas em um ambiente feito para você relaxar.</p>
+            <a href="https://wa.me/5500999999999" target="_blank" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5">
+                <i class="fab fa-whatsapp text-2xl"></i> Agendar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: SOBRE -->
+    <section id="sobre" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r font-bold from-amber-500 to-amber-700 rounded-lg blur opacity-25"></div>
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=800" alt="Nossa Barbearia" class="relative rounded-lg shadow-2xl filter grayscale hover:grayscale-0 transition-all duration-500">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold uppercase mb-6 border-l-4 border-amber-500 pl-4">Nossa História</h2>
+                <p class="text-stone-300 leading-relaxed mb-6">
+                    Fundada com o propósito de resgatar o cuidado masculino tradicional aliado às técnicas modernas, nossa barbearia é o ponto de encontro de quem valoriza a própria identidade. 
+                </p>
+                <p class="text-stone-300 leading-relaxed mb-6">
+                    Aqui, cada cliente recebe um atendimento exclusivo. Da toalha quente à navalha afiada, garantimos não apenas a excelência estética, mas um momento de pausa na sua rotina.
+                </p>
+                <div class="grid grid-cols-3 gap-4 text-center border-t border-stone-800 pt-6">
+                    <div>
+                        <span class="block text-2xl font-bold text-amber-500">10+</span>
+                        <span class="text-xs uppercase tracking-wider text-stone-400">Anos de Mercado</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-amber-500">5k+</span>
+                        <span class="text-xs uppercase tracking-wider text-stone-400">Clientes Satisfeitos</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-amber-500">4.9</span>
+                        <span class="text-xs uppercase tracking-wider text-stone-400">Avaliação Google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: SERVIÇOS -->
+    <section id="servicos" class="bg-stone-950 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold uppercase tracking-wide">Nossos Serviços</h2>
+                <div class="h-1 w-20 bg-amber-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- TABELA / LISTA DE PREÇOS -->
+            <div class="bg-stone-900 border border-stone-800 rounded-xl overflow-hidden shadow-xl">
+                <!-- Serviço 1 -->
+                <div class="flex justify-between items-center p-6 border-b border-stone-800/60 hover:bg-stone-800/30 transition-colors">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-500">Corte Masculino</h3>
+                        <p class="text-sm text-stone-400 mt-1">Corte tradicional, degradê ou moderno. Finalizado com lavagem e pomada.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xl font-extrabold block text-white">R$ 50</span>
+                        <span class="text-xs text-stone-500"><i class="far fa-clock"></i> 45 min</span>
+                    </div>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="flex justify-between items-center p-6 border-b border-stone-800/60 hover:bg-stone-800/30 transition-colors">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-500">Barba de Respeito</h3>
+                        <p class="text-sm text-stone-400 mt-1">Alinhamento com navalha, uso de toalha quente, massagem e óleo hidratante.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xl font-extrabold block text-white">R$ 40</span>
+                        <span class="text-xs text-stone-500"><i class="far fa-clock"></i> 30 min</span>
+                    </div>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="flex justify-between items-center p-6 hover:bg-stone-800/30 transition-colors">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-500">Combo Premium (Corte + Barba)</h3>
+                        <p class="text-sm text-stone-400 mt-1">O pacote completo de cuidados faciais e capilares com desconto.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xl font-extrabold block text-emerald-400">R$ 80</span>
+                        <span class="text-xs text-stone-500"><i class="far fa-clock"></i> 1h 15m</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: GALERIA -->
+    <section id="galeria" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold uppercase tracking-wide">Galeria Visual</h2>
+            <p class="text-stone-400 mt-2">Fotos reais do nosso ambiente e cortes</p>
+            <div class="h-1 w-20 bg-amber-500 mx-auto mt-4"></div>
+        </div>
+
+        <!-- GRID DE FOTOS REAIS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="overflow-hidden rounded-lg h-64 bg-stone-800">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=600" alt="Corte" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-lg h-64 bg-stone-800">
+                <img src="https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&q=80&w=600" alt="Barba" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-lg h-64 bg-stone-800">
+                <img src="https://qtmov.com.br/blog/wp-content/uploads/2026/03/projeto-barbearia-pequena.jpg" alt="Espaço" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-lg h-64 bg-stone-800">
+                <img src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&q=80&w=600" alt="Produtos" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: CONTATO & LOCALIZAÇÃO -->
+    <section id="contato" class="bg-stone-950 py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold uppercase mb-6 border-l-4 border-amber-500 pl-4">Onde Estamos</h2>
+                <div class="space-y-4 mb-8 text-stone-300">
+                    <p><i class="fas fa-map-marker-alt text-amber-500 w-6"></i> Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                    <p><i class="far fa-clock text-amber-500 w-6"></i> Terça a Sábado: 09h às 20h</p>
+                    <p><i class="fas fa-phone text-amber-500 w-6"></i> (11) 99999-9999</p>
+                </div>
+                
+                <!-- BOTÃO DE WHATSAPP EMBUTIDO NO CONTATO -->
+                <a href="https://wa.me/5500999999999" target="_blank" class="block text-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-all shadow-lg shadow-emerald-950/50">
+                    <i class="fab fa-whatsapp mr-2"></i> Chamar no WhatsApp Agora
+                </a>
+            </div>
+            
+            <!-- MAPA FICTÍCIO / PLACEHOLDER DE INTERFACE -->
+            <div class="w-full h-64 md:h-full bg-stone-900 rounded-lg overflow-hidden border border-stone-800">
+                <!-- Substituir o link do iframe abaixo pelo link real do Maps da empresa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.19758700085!2d-46.6564943!3d-23.5613497!2m3!1f0!2f0!3f0!3m2!1i1025!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQwLjkiUyA0NsKwMzknMjMuNCJX!5e0m3!2sbr!2sbr!4v1650000000000!5m2!2sbr!2sbr" class="w-full h-full grayscale opacity-80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP (Aparece em telas menores no canto da tela) -->
+    <a href="https://wa.me/5500999999999" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 transition-transform hover:scale-110 md:hidden flex items-center justify-center">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-stone-950 border-t border-stone-900 py-6 text-center text-xs text-stone-500">
+        <p>&copy; 2026 BarberShop. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
